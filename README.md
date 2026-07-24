@@ -120,13 +120,8 @@ either way.]
 
 ## What I Learned
 
-Reaching "convincing" took very different effort per layer. The **voice** was fast but
-betrayed itself on the content that matters most, numbers and emphasis. The **avatar**
-was the most convincing element and needed almost no effort. The **fabricated analytics**
-were the real lesson. The tool didn't just fake a face. It invented data visualizations,
-including a false decline trend and a projection drawn on a 40-game axis for a 19-game
-season, and both make unverified claims look proven. The most dangerous output here isn't
-the fake face. It's the authoritative-looking chart that no data supports.
+The amount of effort required to produce a convincing result varied across the different layers of the system. The synthetic voice was generated quickly, but it still revealed weaknesses, particularly when presenting numerical information and placing emphasis on key points. In contrast, the avatar was convincing on normal viewing and required minimal effort, making it the most believable component. The fabricated analytics, however, were the most significant finding of this exercise. Rather than simply generating a realistic-looking presenter, the tool also created data visualizations that were entirely unsupported by the underlying dataset. For example, it showed a declining trend that did not exist in the data and even produced a projection on a 40-game timeline despite the season containing only 19 games. These visualizations presented unverified claims in a way that made them appear credible and data-driven. This suggests that the greatest risk is not the creation of a realistic synthetic face, but the generation of authoritative-looking charts and analytics that can easily mislead viewers into believing unsupported conclusions.
+
 
 ## Reproduce This
 
