@@ -13,11 +13,8 @@ evaluate where each output holds up, where it breaks, and how detectable it is.
 
 See [`source_script.md`](./source_script.md). Reused from my
 [Task 5](https://github.com/Jaswanthchandu/Task_05_Descriptive_Stats) coaching
-narrative (~40 seconds spoken), validated there against ground-truth statistics I
-computed myself. Note: an earlier, more polished draft read as obviously AI-authored
-(balanced "X, not Y" phrasing, parallel closers, em-dashes); I deliberately rewrote it
-in a looser spoken register so it would sound like a coach thinking out loud. That
-rewrite is itself a documented finding.
+narrative (~40 seconds spoken), which I had already checked against statistics I calculated myself. I first wrote a more formal version of the script, but when I read it back it sounded like it was written by AI, so I rewrote it to sound more like a coach talking naturally. I mention this because how the script is written affects how believable the final voice sounds.
+
 
 ## Artifacts
 
