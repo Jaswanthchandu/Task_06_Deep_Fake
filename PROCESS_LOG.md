@@ -39,7 +39,12 @@ real games. None of these numbers exist in my Task 5 data.
 ## Detection / Provenance
 **Provenance:** HeyGen watermark tiled across all scenes; baked into frames; survived
 screen-record capture (metadata would not).
-**Detection:** [TO DO, Deepware Scanner or Hive result + confidence + whether explained.]
+**Detection:** Deepware Scanner, submitted video, remained queued 45+ min, no verdict
+(beta tool, free queue stalled). Hive AI-Generated Content Detection, "likely AI-generated
+or deepfake": AI-Generated Video 99.9%, AI-Generated Speech 99.3%, Deepfake 0.1%,
+per-frame timeline (98.7% at 00:00). Hive explained itself with category breakdowns;
+Deepware returned nothing. Note the AI-generated (99.9%) vs deepfake (0.1%) split: the
+tool correctly reads this as synthetic-avatar content, not a face-swap of a real person.
 
 ## Time Summary
 | Pipeline | Effort | Convincing enough to fool a casual scroller? |

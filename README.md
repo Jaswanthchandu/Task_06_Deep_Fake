@@ -11,10 +11,13 @@ evaluate where each output holds up, where it breaks, and how detectable it is.
 
 ## Source Script
 
-See [`source_script.md`](./source_script.md). Reused from my
-[Task 5](https://github.com/Jaswanthchandu/Task_05_Descriptive_Stats) coaching
-narrative (~40 seconds spoken), which I had already checked against statistics I calculated myself. I first wrote a more formal version of the script, but when I read it back it sounded like it was written by AI, so I rewrote it to sound more like a coach talking naturally. I mention this because how the script is written affects how believable the final voice sounds.
-
+See [`source_script.md`](./source_script.md). It reuses my
+[Task 5](https://github.com/Jaswanthchandu/Task_05_Descriptive_Stats) coaching narrative
+(about 40 seconds spoken), which I had already checked against statistics I calculated
+myself. I first wrote a more formal version of the script, but when I read it back it
+sounded like it was written by AI, so I rewrote it to sound more like a coach talking
+naturally. I mention this because how the script is written affects how believable the
+final voice sounds.
 
 ## Artifacts
 
@@ -111,15 +114,34 @@ embedded metadata, which capture would strip. This makes it a comparatively robu
 provenance signal, though a determined user could crop or cover it. The free tier also
 gates download behind payment and watermarks all free output.
 
-**Detection (to complete):** [Upload one artifact to Deepware Scanner or Hive; record the
-confidence score and whether it explained itself. A miss is a valid finding, report it
-either way.]
+**Detection.** I tried two public detectors.
+
+- **Deepware Scanner:** accepted the video but stayed queued for 45+ minutes without ever
+  returning a verdict. The tool is in beta and its free queue appears to stall on larger
+  files. I logged this as a non-result, and it is itself a finding: the free detector
+  could not process the clip.
+- **Hive AI-Generated Content Detection:** returned a clear, detailed result. It flagged
+  the video as "likely to contain AI-generated or deepfake content," with
+  **AI-Generated Video 99.9%** and **AI-Generated Speech 99.3%**, plus a per-frame
+  timeline (e.g. 98.7% AI-generated at 00:00). Unlike Deepware, Hive explained itself
+  with category breakdowns rather than a single opaque number.
+
+One nuance stood out: Hive scored **Deepfake at only 0.1%** even while scoring
+AI-Generated at 99.9%. This is not a contradiction. Hive separates *AI-generated* content
+(made by a synthetic-media tool, which mine clearly is) from a *deepfake* in the narrow
+sense of a real person's face being swapped or manipulated (which mine is not, since it
+uses a synthetic avatar, not a hijacked real identity). The detector correctly identified
+the medium without mistaking it for identity theft.
+
+Taken together, this is a finding in itself: creating the synthetic video took one free
+tool and about seven minutes, but verifying it was uneven, one free detector stalled
+completely while another identified it instantly and with high confidence. The most
+reliable provenance signal I could confirm firsthand was still the HeyGen watermark baked
+into the frames.
 
 ## What I Learned
 
 The amount of effort required to produce a convincing result varied across the different layers of the system. The synthetic voice was generated quickly, but it still revealed weaknesses, particularly when presenting numerical information and placing emphasis on key points. In contrast, the avatar was convincing on normal viewing and required minimal effort, making it the most believable component. The fabricated analytics, however, were the most significant finding of this exercise. Rather than simply generating a realistic-looking presenter, the tool also created data visualizations that were entirely unsupported by the underlying dataset. For example, it showed a declining trend that did not exist in the data and even produced a projection on a 40-game timeline despite the season containing only 19 games. These visualizations presented unverified claims in a way that made them appear credible and data-driven. This suggests that the greatest risk is not the creation of a realistic synthetic face, but the generation of authoritative-looking charts and analytics that can easily mislead viewers into believing unsupported conclusions.
-
-
 ## Reproduce This
 
 1. Read `source_script.md`.

@@ -5,7 +5,14 @@ This is the written narrative synthesized in the artifacts. It is reused from my
 (https://github.com/Jaswanthchandu/Task_05_Descriptive_Stats), which was validated
 against ground-truth statistics I computed myself. It is real analysis, not filler.
 
-**Spoken length:** ~40 seconds (~150 words).
+The script is written in a loose, spoken register on purpose. An earlier, more
+polished draft read as obviously AI-authored (balanced "X, not Y" constructions,
+neat parallel closers, em-dashes). Since one of this task's suggested detection
+checks is asking an LLM whether a transcript reads as AI-generated, I deliberately
+rewrote it to sound like a coach thinking out loud. The rewrite is itself a
+documented finding (see the README).
+
+**Spoken length:** ~50 seconds (~150 words).
 
 ---
 
