@@ -29,8 +29,7 @@ final voice sounds.
 The video artifact exceeds GitHub's 25 MB web-upload limit, so it is hosted externally:
 **[artifact_02_video_SYNTHETIC.mp4 (Google Drive)](https://drive.google.com/file/d/1RLMFhlX276XVZ-rJ0W_dhQYh3E9AL9jx/view?usp=sharing)**
 
-Both filenames carry the `SYNTHETIC` marker. Evidence screenshots (frames from the video)
-are in [`/screenshots`](./screenshots).
+Both filenames carry the `SYNTHETIC` marker.
 
 ## The Two Approaches
 
